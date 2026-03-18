@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_journal_form_itau" model="ir.ui.view">
+    <field name="name">account.journal.form.itau</field>
+    <field name="model">account.journal</field>
+    <field name="inherit_id" ref="account.view_account_journal_form"/>
+    <field name="arch" type="xml">
+        <xpath expr="//header" position="inside">
+            <button name="action_open_itau_import_wizard"
+                    type="object"
+                    string="Atualizar Extrato Itaú"
+                    class="btn-primary"/>
+        </xpath>
+    </field>
+</record>
+
+    </data>
+</odoo>
